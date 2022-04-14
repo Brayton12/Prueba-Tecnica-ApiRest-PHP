@@ -1,8 +1,8 @@
 <?php
 
     if(!empty($_REQUEST['numero'])){
-      $n= $_REQUEST['numero'];
-      
+      $n=$_REQUEST['numero'];
+            
       $r= $n%2;
       if($r==0){
         echo'<script type="text/javascript">

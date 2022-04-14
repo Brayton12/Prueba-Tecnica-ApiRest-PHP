@@ -3,11 +3,7 @@ $url="http://localhost/prueba_t/Api/numaleatorio?page=1";
 $accion="http://localhost/prueba_t/Api/numaleatorio";
 $datos=file_get_contents($url);
 $jsondata = json_decode($datos,true);
-// for ($i=0; $i < count($jsondata) ; $i++) { 
-//     print_r($jsondata[$i]['id']);
-//     print_r($jsondata[$i]['numero']);
-// }
- 
+
 ?>
 
 <table class="table">
@@ -31,7 +27,7 @@ $jsondata = json_decode($datos,true);
         <input type="hidden" name="id" id="id" value="<?php print_r($jsondata[$i]['id']);?>">
          <button type="submit" id="btneliminar"class="btn btn-danger">eliminar</button>
       </form> 
-        <a href="index.php?numero='<?php var_dump($jsondata[$i]['numero']);?>'" type="button" id="btn" class="btn btn-primary"></a>
+        <a href="index.php?numero=<?php print_r($jsondata[$i]['numero']);?>" type="button" id="btn" class="btn btn-primary"> ¿Par o Impar?</a>
         </div>
     </td>
       
