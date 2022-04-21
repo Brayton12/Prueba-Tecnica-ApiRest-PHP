@@ -1,24 +1,4 @@
-<?php
 
-    if(!empty($_REQUEST['numero'])){
-      $n=$_REQUEST['numero'];
-            
-      $r= $n%2;
-      if($r==0){
-        echo'<script type="text/javascript">
-        alert(" El numero '.$n.' es par");
-        
-        </script>';
-          
-      }else{
-        echo'<script type="text/javascript">
-        alert(" El numero '.$n.' es impar");
-        
-        </script>';
-          
-      }
-    }
-  ?>
 
   <div class="col-auto">
     <h1>Escriba un numero</h1>

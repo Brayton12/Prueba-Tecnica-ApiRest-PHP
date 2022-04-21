@@ -9,8 +9,7 @@ $_numaleatorio = new numaleatorio;
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 
-$postBody = $_POST["id"]; //Esto solo se usa si desde tu front viene un JSON, normalmente como es php puro no recibnes un JSON sino un x-www-form-urlencoded esto es un field
-
+$postBody = $_POST["id"];
 $datosArray = $_numaleatorio->delete($postBody);
 
 

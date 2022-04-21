@@ -27,7 +27,7 @@ $jsondata = json_decode($datos,true);
         <input type="hidden" name="id" id="id" value="<?php print_r($jsondata[$i]['id']);?>">
          <button type="submit" id="btneliminar"class="btn btn-danger">eliminar</button>
       </form> 
-        <a href="index.php?numero=<?php print_r($jsondata[$i]['numero']);?>" type="button" id="btn" class="btn btn-primary"> ¿Par o Impar?</a>
+        <a onClick="numeroPar(<?php print_r($jsondata[$i]['numero']);?>)" type="button" id="btn" class="btn btn-primary"> ¿Par o Impar?</a>
         </div>
     </td>
       
